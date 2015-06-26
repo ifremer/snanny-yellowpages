@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sml:PhysicalSystem xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="top" xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd">
+    
+      
+       <gml:metaDataProperty>
+        <gml:GenericMetaData>
+            <gmd:CI_ResponsibleParty>
+           
+				<gmd:individualName>
+                    <gco:CharacterString>Ivo Bernardo</gco:CharacterString>
+                </gmd:individualName>
+                 
+                <gmd:organisationName>
+                    <gco:CharacterString>YELLOW PAGES - EMSO</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                    
+                        <gmd:address>
+                            <gmd:CI_Address>
+                                <gmd:electronicMailAddress>
+<gco:CharacterString>imbernardo@fc.ul.pt</gco:CharacterString>
+                                </gmd:electronicMailAddress>
+                            </gmd:CI_Address>
+                        </gmd:address>
+                        
+                        <gmd:onlineResource>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+<gmd:URL>http://www.esonetyellowpages.com/</gmd:URL>
+                                </gmd:linkage>
+                            </gmd:CI_OnlineResource>
+                        </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+                </gmd:role>
+            </gmd:CI_ResponsibleParty>
+        </gml:GenericMetaData>
+    </gml:metaDataProperty>
+         
+    <!-- Description --> 
+    <gml:description> Tritech International Ltd is proud to introduce a breakthrough in subsea battery technology in collaboration with our partners Xipower.
+The battery power needs of the subsea industry are both complex and challenging. This technology will be able to address these needs by offering a technology that is lighter, more compact, 3 x more powerful and more efficient than conventional battery technology. The Lithium Polymer battery is submersible to full ocean depth. It also features the latest innovative battery management technology from Xipower which incorporates an advanced energy management system. This autonomous management system constantly monitors the performance and efficiency of all the power cells, thereby optimising and extending the operational time of the battery and reducing overall mission support costs. Optional battery communication is also available to monitor the status of all the cells.
+Each battery pack can be built to satisfy the customer&#x27;s individual power requirement. It&#x27;s modular design enables a wide range of power cells to be configured to meet the customer specification. By optimising the Lithium Polymer cells and all the associated monitoring circuitry, the battery system offers a flexible and diverse range of voltage and power options.   </gml:description>
+    <!-- Name --> 
+    <gml:name >   Lithium Polymer Underwater Battery   </gml:name>  
+  <!-- keywords--> 
+    <sml:keywords>
+        <sml:KeywordList>
+            <sml:keyword>marine</sml:keyword>
+        </sml:KeywordList>
+    </sml:keywords>
+
+    
+    <!-- Identification--> 
+   
+   <sml:identification>
+        <sml:IdentifierList>
+            <sml:identifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=66">
+                    <sml:label>uuid</sml:label>
+                    <sml:value>2d4cafb3-cb09-36fc-b309-59d92a76102d</sml:value>
+                </sml:Term>
+            </sml:identifier>
+        </sml:IdentifierList>
+    </sml:identification>
+    
+    <!-- Classification -->
+       
+    <sml:classification>
+        <sml:ClassifierList>
+      
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>model</sml:label>
+                    
+                    <sml:value>Lithium Polymer Underwater Battery</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=52">
+                    <sml:label>manufacturer</sml:label>
+                    <sml:codeSpace xlink:href="http://www.ifremer.fr/tematres/vocab/xml.php?skosTema=40"/>
+                    <sml:value>Tritech International Ltd.</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Nominal voltage</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Open voltage</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Min. voltage</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Typical capacity</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Max. capacity</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Max. current</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Cell type</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Operating temperature</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Operating depth</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Connector</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Dimensions</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Weight in air</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Weight in water</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Materials</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+              
+          
+        </sml:ClassifierList>
+    </sml:classification>
+  
+     <sml:documentation>
+        <sml:DocumentList>         
+            <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://isi.ifremer.fr/snanny-portal/webgraphiceditorDemo/images/models/lithium_polymer_underwater_battery.png</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name>
+                        <gco:CharacterString>lithium_polymer_underwater_battery.png</gco:CharacterString>
+                    </gmd:name>                   
+                    <gmd:function><gmd:CI_OnLineFunctionCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=99" codeListValue="quicklook"></gmd:CI_OnLineFunctionCode></gmd:function>
+                </gmd:CI_OnlineResource>
+            </sml:document>
+        </sml:DocumentList>
+    </sml:documentation>
+   
+     
+     
+     
+   
+    
+</sml:PhysicalSystem>

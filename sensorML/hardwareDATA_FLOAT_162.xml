@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sml:PhysicalSystem xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="top" xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd">
+    
+      
+       <gml:metaDataProperty>
+        <gml:GenericMetaData>
+            <gmd:CI_ResponsibleParty>
+           
+				<gmd:individualName>
+                    <gco:CharacterString>Ivo Bernardo</gco:CharacterString>
+                </gmd:individualName>
+                 
+                <gmd:organisationName>
+                    <gco:CharacterString>YELLOW PAGES - EMSO</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                    
+                        <gmd:address>
+                            <gmd:CI_Address>
+                                <gmd:electronicMailAddress>
+<gco:CharacterString>imbernardo@fc.ul.pt</gco:CharacterString>
+                                </gmd:electronicMailAddress>
+                            </gmd:CI_Address>
+                        </gmd:address>
+                        
+                        <gmd:onlineResource>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+<gmd:URL>http://www.esonetyellowpages.com/</gmd:URL>
+                                </gmd:linkage>
+                            </gmd:CI_OnlineResource>
+                        </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+                </gmd:role>
+            </gmd:CI_ResponsibleParty>
+        </gml:GenericMetaData>
+    </gml:metaDataProperty>
+         
+    <!-- Description --> 
+    <gml:description> The spheres are manufactured from borosilicate glass 3.3 (SCHOTT DURAN®). Floatation spheres are evacuated and sealed after careful triple grinding of each equatorial sealing face. The equator is sealed with a butyl-rubber sealant band and protective tape. The precision moulded hemispheres do not require matching. Hemispheres of instrument housings can be mated without being orientated.
+Bright orange, polyethylene, neutrally buoyant protective shells are available for impact protection, stowing and ease of handling. The shells consist of two flanged halves, bolted together with stainless steel screws, washers and self-locking nuts. Synthetic hair pads absorb shock and retain the sphere concentrically. The flanges can be bolted to mounting hardware, such as EDDYGRIP swivelling sphere attachments.   </gml:description>
+    <!-- Name --> 
+    <gml:name >   SR432   </gml:name>  
+  <!-- keywords--> 
+    <sml:keywords>
+        <sml:KeywordList>
+            <sml:keyword>marine</sml:keyword>
+        </sml:KeywordList>
+    </sml:keywords>
+
+    
+    <!-- Identification--> 
+   
+   <sml:identification>
+        <sml:IdentifierList>
+            <sml:identifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=66">
+                    <sml:label>uuid</sml:label>
+                    <sml:value>3ddac9a8-cf9a-34a0-8a27-40aaa68b0a96</sml:value>
+                </sml:Term>
+            </sml:identifier>
+        </sml:IdentifierList>
+    </sml:identification>
+    
+    <!-- Classification -->
+       
+    <sml:classification>
+        <sml:ClassifierList>
+      
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>model</sml:label>
+                    
+                    <sml:value>SR432</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=52">
+                    <sml:label>manufacturer</sml:label>
+                    <sml:codeSpace xlink:href="http://www.ifremer.fr/tematres/vocab/xml.php?skosTema=40"/>
+                    <sml:value>Nautilus Marine Service GmbH</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Net buoyancy</sml:label>
+                    
+                    <sml:value>22 or 26 kg</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Depth</sml:label>
+                    
+                    <sml:value>6700 or 9000 m</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Dimensions</sml:label>
+                    
+                    <sml:value>610 x 610 x 526 mm</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Weight in air</sml:label>
+                    
+                    <sml:value>22.75 or 27.25 kg</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Materials</sml:label>
+                    
+                    <sml:value>Glass and Polyethylene</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+              
+          
+        </sml:ClassifierList>
+    </sml:classification>
+  
+     <sml:documentation>
+        <sml:DocumentList>         
+            <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://isi.ifremer.fr/snanny-portal/webgraphiceditorDemo/images/models/sr432.png</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name>
+                        <gco:CharacterString>sr432.png</gco:CharacterString>
+                    </gmd:name>                   
+                    <gmd:function><gmd:CI_OnLineFunctionCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=99" codeListValue="quicklook"></gmd:CI_OnLineFunctionCode></gmd:function>
+                </gmd:CI_OnlineResource>
+            </sml:document>
+        </sml:DocumentList>
+    </sml:documentation>
+   
+     
+     
+     
+   
+    
+</sml:PhysicalSystem>

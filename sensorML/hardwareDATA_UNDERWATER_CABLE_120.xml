@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sml:PhysicalSystem xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="top" xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd">
+    
+      
+       <gml:metaDataProperty>
+        <gml:GenericMetaData>
+            <gmd:CI_ResponsibleParty>
+           
+				<gmd:individualName>
+                    <gco:CharacterString>Ivo Bernardo</gco:CharacterString>
+                </gmd:individualName>
+                 
+                <gmd:organisationName>
+                    <gco:CharacterString>YELLOW PAGES - EMSO</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                    
+                        <gmd:address>
+                            <gmd:CI_Address>
+                                <gmd:electronicMailAddress>
+<gco:CharacterString>imbernardo@fc.ul.pt</gco:CharacterString>
+                                </gmd:electronicMailAddress>
+                            </gmd:CI_Address>
+                        </gmd:address>
+                        
+                        <gmd:onlineResource>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+<gmd:URL>http://www.esonetyellowpages.com/</gmd:URL>
+                                </gmd:linkage>
+                            </gmd:CI_OnlineResource>
+                        </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+                </gmd:role>
+            </gmd:CI_ResponsibleParty>
+        </gml:GenericMetaData>
+    </gml:metaDataProperty>
+         
+    <!-- Description --> 
+    <gml:description> Alcatel has developed a complete range of fibre optic submarine cables, one of them being the URC4 cable family. The URC4 cable has been designed specially for unrepeatered systems, benefiting from our past extensive experience in the conception and development of fibre optic cables.
+This cable type is based on the well-known 21.5 mm slotted-core and steel tube cables. The large diameter steel tube can house up to 96 fibres with no strain.
+The fibres have a defined excess length relative to the tube which is filled with a water-blocking compound. The steel tube offers mechanical and hydrostatic protection and acts as an hermetic barrier against hydrogen for the optical fibres.
+Various armouring structures of the URC4 cable are available to give extra protection in shallow-water areas.
+Armoured cables use the deep-sea cable type lightweight (LW) structure, with additional protection provided according to the conditions and nature of the seabed.
+Single armoured cable is made by laying galvanised steel wires over the deep-sea cable structure. This layer is covered by polypropylene yarn impregnated with bituminous compound.
+For electroding purposes (fault location by means of sea electrodes), the cable design includes a copper conductor fitted over the steel vault.
+The URC4 cable family and associated joints are designed to perform reliably for at least 25 years. The URC4 cables are also qualified for use with the Universal Joint (UJ).
+The cable design ensures that no strain is exerted on the fibres during normal operation. In the case of a cable break, high strains and seawater ingress are limited to a short length, so the majority of the cable remains serviceable.   </gml:description>
+    <!-- Name --> 
+    <gml:name >   URC4   </gml:name>  
+  <!-- keywords--> 
+    <sml:keywords>
+        <sml:KeywordList>
+            <sml:keyword>marine</sml:keyword>
+        </sml:KeywordList>
+    </sml:keywords>
+
+    
+    <!-- Identification--> 
+   
+   <sml:identification>
+        <sml:IdentifierList>
+            <sml:identifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=66">
+                    <sml:label>uuid</sml:label>
+                    <sml:value>2e151f12-beac-3242-a8d2-5b450a28958b</sml:value>
+                </sml:Term>
+            </sml:identifier>
+        </sml:IdentifierList>
+    </sml:identification>
+    
+    <!-- Classification -->
+       
+    <sml:classification>
+        <sml:ClassifierList>
+      
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>model</sml:label>
+                    
+                    <sml:value>URC4</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=52">
+                    <sml:label>manufacturer</sml:label>
+                    <sml:codeSpace xlink:href="http://www.ifremer.fr/tematres/vocab/xml.php?skosTema=40"/>
+                    <sml:value>Alcatel-Lucent</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Type</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Core</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Cable diameter</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Bending radius</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Colour</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=158">
+                    <sml:label>Depth rating</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Weight in air</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Weight in water</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Breaking strenght</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Conductor resistance</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Insulation resistance</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Operating voltage</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Capacitance</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Bandwidth</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Impedance</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Attenuation</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Temperature</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Filler</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Shield</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Outer jacket</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+              
+          
+        </sml:ClassifierList>
+    </sml:classification>
+  
+     <sml:documentation>
+        <sml:DocumentList>         
+            <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://isi.ifremer.fr/snanny-portal/webgraphiceditorDemo/images/models/urc4.png</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name>
+                        <gco:CharacterString>urc4.png</gco:CharacterString>
+                    </gmd:name>                   
+                    <gmd:function><gmd:CI_OnLineFunctionCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=99" codeListValue="quicklook"></gmd:CI_OnLineFunctionCode></gmd:function>
+                </gmd:CI_OnlineResource>
+            </sml:document>
+        </sml:DocumentList>
+    </sml:documentation>
+   
+     
+     
+     
+   
+    
+</sml:PhysicalSystem>

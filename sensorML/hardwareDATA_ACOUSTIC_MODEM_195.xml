@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sml:PhysicalSystem xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="top" xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd">
+    
+      
+       <gml:metaDataProperty>
+        <gml:GenericMetaData>
+            <gmd:CI_ResponsibleParty>
+           
+				<gmd:individualName>
+                    <gco:CharacterString>Francisco Bustamante</gco:CharacterString>
+                </gmd:individualName>
+                 
+                <gmd:organisationName>
+                    <gco:CharacterString>YELLOW PAGES - EMSO</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                    
+                        <gmd:address>
+                            <gmd:CI_Address>
+                                <gmd:electronicMailAddress>
+<gco:CharacterString>info@evologics.de</gco:CharacterString>
+                                </gmd:electronicMailAddress>
+                            </gmd:CI_Address>
+                        </gmd:address>
+                        
+                        <gmd:onlineResource>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+<gmd:URL>http://www.esonetyellowpages.com/</gmd:URL>
+                                </gmd:linkage>
+                            </gmd:CI_OnlineResource>
+                        </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+                </gmd:role>
+            </gmd:CI_ResponsibleParty>
+        </gml:GenericMetaData>
+    </gml:metaDataProperty>
+         
+    <!-- Description --> 
+    <gml:description> S2C R USBL Acoustic Modem, built on the reliable S2CR Acoustic Modem platform, enables tracking simultaneously with data transmission. Providing high performance at low price, the S2CR modem is also available in low weight OEM version for easy integration into AUV/ ROV.
+
+With data rates up to 33 kbits/sec possible on some USBL modem models, this can also be used as a backup data link in ROVs.
+
+A key innovation with the S2CR system is the “instant messaging” feature - the asynchronous insertion of data, transmitted immediately on top of the data stream. With this, the response time is improved and the need to install an extra emergency or command link can be avoided.
+
+A complete solution include a USBL Modem that is either ship mounted and/or combined with a motion sensor solution to obtain the position with correction for the pitch, roll and yaw of the mother ship. (In the latest version, the motion sensor is integrated in the modem housing.) The second transceiver modem is attached to the tracking target like the AUV/ ROVs.   </gml:description>
+    <!-- Name --> 
+    <gml:name >   S2C R USBL Acoustic Modem   </gml:name>  
+  <!-- keywords--> 
+    <sml:keywords>
+        <sml:KeywordList>
+            <sml:keyword>marine</sml:keyword>
+        </sml:KeywordList>
+    </sml:keywords>
+
+    
+    <!-- Identification--> 
+   
+   <sml:identification>
+        <sml:IdentifierList>
+            <sml:identifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=66">
+                    <sml:label>uuid</sml:label>
+                    <sml:value>c8f97c63-e99e-34c0-acb5-9f5c67b61676</sml:value>
+                </sml:Term>
+            </sml:identifier>
+        </sml:IdentifierList>
+    </sml:identification>
+    
+    <!-- Classification -->
+       
+    <sml:classification>
+        <sml:ClassifierList>
+      
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>model</sml:label>
+                    
+                    <sml:value>S2C R USBL Acoustic Modem</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=52">
+                    <sml:label>manufacturer</sml:label>
+                    <sml:codeSpace xlink:href="http://www.ifremer.fr/tematres/vocab/xml.php?skosTema=40"/>
+                    <sml:value>EvoLogics GMBH</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+              
+          
+        </sml:ClassifierList>
+    </sml:classification>
+  
+     <sml:documentation>
+        <sml:DocumentList>         
+            <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://isi.ifremer.fr/snanny-portal/webgraphiceditorDemo/images/models/s2c_r_usbl_acoustic_modem.png</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name>
+                        <gco:CharacterString>s2c_r_usbl_acoustic_modem.png</gco:CharacterString>
+                    </gmd:name>                   
+                    <gmd:function><gmd:CI_OnLineFunctionCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=99" codeListValue="quicklook"></gmd:CI_OnLineFunctionCode></gmd:function>
+                </gmd:CI_OnlineResource>
+            </sml:document>
+        </sml:DocumentList>
+    </sml:documentation>
+   
+     
+     
+     
+   
+    
+</sml:PhysicalSystem>

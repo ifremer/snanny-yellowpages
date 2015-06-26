@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sml:PhysicalSystem xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="top" xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd">
+    
+      
+       <gml:metaDataProperty>
+        <gml:GenericMetaData>
+            <gmd:CI_ResponsibleParty>
+           
+				<gmd:individualName>
+                    <gco:CharacterString>Jasmin Asmussen</gco:CharacterString>
+                </gmd:individualName>
+                 
+                <gmd:organisationName>
+                    <gco:CharacterString>YELLOW PAGES - EMSO</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                    
+                        <gmd:address>
+                            <gmd:CI_Address>
+                                <gmd:electronicMailAddress>
+<gco:CharacterString>Jasmin.Asmussen@develogic.de</gco:CharacterString>
+                                </gmd:electronicMailAddress>
+                            </gmd:CI_Address>
+                        </gmd:address>
+                        
+                        <gmd:onlineResource>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+<gmd:URL>http://www.esonetyellowpages.com/</gmd:URL>
+                                </gmd:linkage>
+                            </gmd:CI_OnlineResource>
+                        </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+                </gmd:role>
+            </gmd:CI_ResponsibleParty>
+        </gml:GenericMetaData>
+    </gml:metaDataProperty>
+         
+    <!-- Description --> 
+    <gml:description> All of our develogic pressure housings are long term corrosion-resistant, solid and lightweight without any protection anodes. Working under pressure is comfortable due to our convenient opening and closing housings without making use of any extra tools and srews.
+
+MCH Compact Housing
+Our develogic MCH compact housing is the best choice for operating with smaller instruments when power is supplied externally. Design and advantages are adequate to our MCH standard housing. Also the MCH compact housing cap is equipped with our integral locking sleeve for easy handling
+
+
+Base Housing
+
+Our base housing features an inner diameter of 87mm with two optional inner usable lengths: 230mm and 500mm. With our base housing you chose a small but very effective solution to operate reliable in depths of 6,000m. 
+
+The deep-water-version is completely made of titanium to offer superior corrosion resistance. Our shallow water version features a pressure tube made of resistive fiber-reinforced synthetics.
+
+End caps for interface connectors and transducers are available.
+Housings for Special Applications
+
+We approach special application with several composite and titanium-pressure housing solutions.
+
+-Large housing with titanium body and BK7 optical glass port for submergible high resolution digital SLR full frame-camera to operate in up to 6,000m depth
+
+-Housing with titanium body and BK7 optical glass port for submergible photographic high power flash unit to operate in up to 6,000m depth
+
+-Compact antenna housing  with titanium body and BK7  optical glass port to operate in up to 6,000m depth
+
+Reliability
+
+All develogic pressure housings convince by superior quality and design.
+Our design is a result of a long-term expertise in oceanography. Sophisticated 3D modeling and simulation tools, developed by our engineers, help to manufacture our housings with superior design and persuading quality. Specified operating depths are calculated with a safety factor of 1.5 and are verified in pressing testing facilities.
+
+Principally used materials are titanium, fiber-reinforced synthetics and high strengthened aluminium with surface hard coating. Integral parts made of epoxy-glass resin are also demanded.
+
+Our housings have been proven by our content customers to be rugged and very reliable with no failures. develogic established a satisfied client base during the past years. Due to our precision in developing and assembling we can offer a reliable product. This is why we are able to guarantee a 5-years-full corrosion –resistance on all our MCH and base system housings, connectors and acoustic transducers.
+
+Sometimes our wide range of modular MCH and Base housings cannot meet our customers’ special mission requirements.Based on our long lasting experience in designing and engineering subsea pressure housings, we are able to provide an optimal solution for your special desires. 
+
+We offer a large range of accessories to customize our pressure housings to your needs. Individual solutions are available upon request.
+Kindly contact us for further information.
+
+Battery Containers
+
+Our refillable battery containers are for use our MCH composite pressure housings. Due to their flexible mechanical and electronical design, all MCH battery packs can be customized to fit a large variety of applications.
+Our battery containers are to be mounted onto the MCH standard, compact and large housing caps. 
+
+Our pressure housings can therefore be transformed into flexible external power supply for your instruments.
+
+Battery containers are made of epoxy-glass resin, lightweight anodized aluminium and engineering synthetics. This is why they do not add much more weight and ensure an easy servicing. Your big advantage is that you are no longer dependent on customized battery packs. Reasonable off-the-shelf lithium, alkaline or NiMH battery cells can be used with our flexible battery cells.
+
+Mooring Frames
+
+Inline mooring frames are available for all our MCH and base system housings. Those are either made of 1.4571 stainless steel with additional aluminium anodes or made of titanium. Compatible shacks of bow shackles with safety pin and high strength synthetic sleeves are optionally available.
+
+Safe working load (SWL) for our standard size and compact MCH frames is 10kN. Our large MCH frame features a SWL of 15kN.
+
+Heavy-duty inline frames with increased SWL, customized housing and transducer mounting adapters are available upon request.
+
+Optical Glass Port
+
+A titanium end cap with BK7 optical glass port is available for our MCH standard size and compact housings. The reliable operating depth is 6,000m.
+
+The optical glass port allows convenient integration of optical instruments into our MCH pressure housings. Those can be videos, still cameras, lights and flash lights, RF antennas and satellite transponders.
+Housing Coupling Adapter
+
+ Our standard MCH housing can be coupled into a double-lengths housing by using our optional composite adapter (cable lead-through with an inner diameter of 66mm).
+
+Pressure Relief Valve
+
+Our pressure relief valve with rebound functionality offers a maximum of safety. Reliable operating depth is 6,000m.
+
+In case of overpressure the valves open immediately.  Unlike in most commercially available solutions, our valve closes after pressure compensation.  Thereby your instruments are protected against incoming water.
+
+Pressure Port
+
+A titanium pressure port allows assembling an internal pressure sensor. A pressure port can be easily bolt on any of our end caps.   
+Our standard and large MCH houses can be equipped with a Paroscientific 410K-101 precision pressure sensor (incl. dedicated internal mounting adapters). Upon request we assemble various other sensors into your pressure port.
+
+Please contact us!   </gml:description>
+    <!-- Name --> 
+    <gml:name >   MCH Compact Housing   </gml:name>  
+  <!-- keywords--> 
+    <sml:keywords>
+        <sml:KeywordList>
+            <sml:keyword>marine</sml:keyword>
+        </sml:KeywordList>
+    </sml:keywords>
+
+    
+    <!-- Identification--> 
+   
+   <sml:identification>
+        <sml:IdentifierList>
+            <sml:identifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=66">
+                    <sml:label>uuid</sml:label>
+                    <sml:value>270c344a-cf60-312c-90cd-dbcfb5bfd7e5</sml:value>
+                </sml:Term>
+            </sml:identifier>
+        </sml:IdentifierList>
+    </sml:identification>
+    
+    <!-- Classification -->
+       
+    <sml:classification>
+        <sml:ClassifierList>
+      
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>model</sml:label>
+                    
+                    <sml:value>MCH Compact Housing</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=52">
+                    <sml:label>manufacturer</sml:label>
+                    <sml:codeSpace xlink:href="http://www.ifremer.fr/tematres/vocab/xml.php?skosTema=40"/>
+                    <sml:value>Develogic GmbH</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Max. operating depth</sml:label>
+                    
+                    <sml:value>rated and tested to 750m / 6,000m</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Inner diameter ID</sml:label>
+                    
+                    <sml:value>110mm</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Inner lenght IL</sml:label>
+                    
+                    <sml:value>179mm/82mm</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Outer diameter OD</sml:label>
+                    
+                    <sml:value>153mm</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Outer lenght OL</sml:label>
+                    
+                    <sml:value>300mm/180mm</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Weight in air</sml:label>
+                    
+                    <sml:value>6.1kg/6.9kg</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Weight in water</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Material</sml:label>
+                    
+                    <sml:value>outer shell:
+fibrer reinforced POM/ titanium
+inner shell:  hight strength  aerospace aluminium, hard coated</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+              
+          
+        </sml:ClassifierList>
+    </sml:classification>
+  
+     <sml:documentation>
+        <sml:DocumentList>         
+            <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://isi.ifremer.fr/snanny-portal/webgraphiceditorDemo/images/models/mch_compact_housing.png</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name>
+                        <gco:CharacterString>mch_compact_housing.png</gco:CharacterString>
+                    </gmd:name>                   
+                    <gmd:function><gmd:CI_OnLineFunctionCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=99" codeListValue="quicklook"></gmd:CI_OnLineFunctionCode></gmd:function>
+                </gmd:CI_OnlineResource>
+            </sml:document>
+        </sml:DocumentList>
+    </sml:documentation>
+   
+     
+     
+     
+   
+    
+</sml:PhysicalSystem>

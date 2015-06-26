@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sml:PhysicalSystem xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="top" xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd">
+    
+      
+       <gml:metaDataProperty>
+        <gml:GenericMetaData>
+            <gmd:CI_ResponsibleParty>
+           
+				<gmd:individualName>
+                    <gco:CharacterString>Ivo Bernardo</gco:CharacterString>
+                </gmd:individualName>
+                 
+                <gmd:organisationName>
+                    <gco:CharacterString>YELLOW PAGES - EMSO</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                    
+                        <gmd:address>
+                            <gmd:CI_Address>
+                                <gmd:electronicMailAddress>
+<gco:CharacterString>imbernardo@fc.ul.pt</gco:CharacterString>
+                                </gmd:electronicMailAddress>
+                            </gmd:CI_Address>
+                        </gmd:address>
+                        
+                        <gmd:onlineResource>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+<gmd:URL>http://www.esonetyellowpages.com/</gmd:URL>
+                                </gmd:linkage>
+                            </gmd:CI_OnlineResource>
+                        </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+                </gmd:role>
+            </gmd:CI_ResponsibleParty>
+        </gml:GenericMetaData>
+    </gml:metaDataProperty>
+         
+    <!-- Description --> 
+    <gml:description> HydroPack is a submersible battery pack that uses of commonly available D cells for high-power or long-endurance oceanographic deployments. 20 cells are wired in two groups of 10 cells each, providing a nominal output of 15 V and capacity of up to 36 Ahr (see further notes on capacity below). Diodes prevent harmful interactions between the cell groups, and also allow multiple HydroPacks to be safely paralleled (with appropriate cables).
+The output is protected with a 2.5 A resettable fuse. In the event of an overload or short circuit, the fuse will activate and reduce the current to a low level.
+Once the fault condition is removed, the fuse will return to its normal state in a short time.
+The HydroPack case is made from type 316 stainless steel to resist corrosion and safely operate at 800 meters depth. It is also equipped with a pressure relief valve that limits internal pressure build-up in case of a fault condition such as a water leak or gas generation by the batteries.   </gml:description>
+    <!-- Name --> 
+    <gml:name >   HydroPack   </gml:name>  
+  <!-- keywords--> 
+    <sml:keywords>
+        <sml:KeywordList>
+            <sml:keyword>marine</sml:keyword>
+        </sml:KeywordList>
+    </sml:keywords>
+
+    
+    <!-- Identification--> 
+   
+   <sml:identification>
+        <sml:IdentifierList>
+            <sml:identifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=66">
+                    <sml:label>uuid</sml:label>
+                    <sml:value>4f328b5f-fa85-3219-8a2e-991dfa938406</sml:value>
+                </sml:Term>
+            </sml:identifier>
+        </sml:IdentifierList>
+    </sml:identification>
+    
+    <!-- Classification -->
+       
+    <sml:classification>
+        <sml:ClassifierList>
+      
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>model</sml:label>
+                    
+                    <sml:value>HydroPack</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=52">
+                    <sml:label>manufacturer</sml:label>
+                    <sml:codeSpace xlink:href="http://www.ifremer.fr/tematres/vocab/xml.php?skosTema=40"/>
+                    <sml:value>HOBI Labs, Inc.</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Nominal voltage</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Open voltage</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Min. voltage</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Typical capacity</sml:label>
+                    
+                    <sml:value>Continuous Load, 20 C
+*50 mA 700 hrs
+*500 mA 40 hrs
+*1000 mA 17 hrs
+Intermittent load, 2 minutes per hour:
+*50 mA 2 years
+*500 mA 50 days
+*1000 mA 22 days
+
+With appropriate cabling, multiple HydroPacks can be parelleled for greater capacity.</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Max. capacity</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Max. current</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Cell type</sml:label>
+                    
+                    <sml:value>20 D Cells</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Operating temperature</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Operating depth</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Connector</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Dimensions</sml:label>
+                    
+                    <sml:value>Diameter: 9 cm (3.5\&quot;)
+Length: 37 cm (14.5\&quot;), not including connector.</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Weight in air</sml:label>
+                    
+                    <sml:value>5.3 kg</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Weight in water</sml:label>
+                    
+                    <sml:value>2.5 kg submerged with batteries.</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Materials</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+              
+          
+        </sml:ClassifierList>
+    </sml:classification>
+  
+     <sml:documentation>
+        <sml:DocumentList>         
+            <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://isi.ifremer.fr/snanny-portal/webgraphiceditorDemo/images/models/hydropack.png</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name>
+                        <gco:CharacterString>hydropack.png</gco:CharacterString>
+                    </gmd:name>                   
+                    <gmd:function><gmd:CI_OnLineFunctionCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=99" codeListValue="quicklook"></gmd:CI_OnLineFunctionCode></gmd:function>
+                </gmd:CI_OnlineResource>
+            </sml:document>
+        </sml:DocumentList>
+    </sml:documentation>
+   
+     
+     
+     
+   
+    
+</sml:PhysicalSystem>

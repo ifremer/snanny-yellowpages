@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sml:PhysicalSystem xmlns:sml="http://www.opengis.net/sensorml/2.0" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:swe="http://www.opengis.net/swe/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="top" xsi:schemaLocation="http://www.opengis.net/sensorml/2.0 http://schemas.opengis.net/sensorML/2.0/sensorML.xsd">
+    
+      
+       <gml:metaDataProperty>
+        <gml:GenericMetaData>
+            <gmd:CI_ResponsibleParty>
+           
+				<gmd:individualName>
+                    <gco:CharacterString>Jasmin Asmussen</gco:CharacterString>
+                </gmd:individualName>
+                 
+                <gmd:organisationName>
+                    <gco:CharacterString>YELLOW PAGES - EMSO</gco:CharacterString>
+                </gmd:organisationName>
+                <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                    
+                        <gmd:address>
+                            <gmd:CI_Address>
+                                <gmd:electronicMailAddress>
+<gco:CharacterString>Jasmin.Asmussen@develogic.de</gco:CharacterString>
+                                </gmd:electronicMailAddress>
+                            </gmd:CI_Address>
+                        </gmd:address>
+                        
+                        <gmd:onlineResource>
+                            <gmd:CI_OnlineResource>
+                                <gmd:linkage>
+<gmd:URL>http://www.esonetyellowpages.com/</gmd:URL>
+                                </gmd:linkage>
+                            </gmd:CI_OnlineResource>
+                        </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                </gmd:contactInfo>
+                <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+                </gmd:role>
+            </gmd:CI_ResponsibleParty>
+        </gml:GenericMetaData>
+    </gml:metaDataProperty>
+         
+    <!-- Description --> 
+    <gml:description> Mini.Logger
+
+Interface &amp; Data Logging Module
+
+Our multifunctional interface and data logging module features an onboard SDHC based data logger as well as 4 serial ports (2x RS232/ 422/ 485, 2 x RS232), USB (host and slave) and CAN2.0B interface.
+
+The optional available daughter board provides additional sensors often required in standard applications (such as 3-axis accelerometer/ inclinometer. 2 axis gyroscope, compass, pressure sensor). It includes 6 digital and 2 analogue inputs as well as 4 optically isolated and 4 high power output switches.
+
+Helpful additional functions are a precision time base, a switchable power supply for external sensors and many more.
+
+Furthermore it is possible to stack multiple modules (master/ slave configuration), if our customers’ applications require any additional ports.
+This module is primarily intended to be a flexible and powerful multiport data logging system controller solution in buoy based or ocean floor sensor systems. This system is feasible to be used as a standalone version one or a combination with any of our telemetry systems offered. Due to the extra low power consumption it is ideally suited to be used for long-term deployments.
+
+Our flexible and extensive firmware allows economical and reliable customization. It enables our customers to handle applications now, which cannot be concluded by the current available standard firmware.
+
+Further details can be read in the datasheet (attachment)   </gml:description>
+    <!-- Name --> 
+    <gml:name >   Mini Logger - Interface and Data Logging Module   </gml:name>  
+  <!-- keywords--> 
+    <sml:keywords>
+        <sml:KeywordList>
+            <sml:keyword>marine</sml:keyword>
+        </sml:KeywordList>
+    </sml:keywords>
+
+    
+    <!-- Identification--> 
+   
+   <sml:identification>
+        <sml:IdentifierList>
+            <sml:identifier>
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=66">
+                    <sml:label>uuid</sml:label>
+                    <sml:value>a1dcac53-b4c3-3c83-b4ee-b1bc1e9da555</sml:value>
+                </sml:Term>
+            </sml:identifier>
+        </sml:IdentifierList>
+    </sml:identification>
+    
+    <!-- Classification -->
+       
+    <sml:classification>
+        <sml:ClassifierList>
+      
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>model</sml:label>
+                    
+                    <sml:value>Mini Logger - Interface and Data Logging Module</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=52">
+                    <sml:label>manufacturer</sml:label>
+                    <sml:codeSpace xlink:href="http://www.ifremer.fr/tematres/vocab/xml.php?skosTema=40"/>
+                    <sml:value>Develogic GmbH</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term definition="http://www.ifremer.fr/tematres/vocab/index.php?tema=158">
+                    <sml:label>Depth rating</sml:label>
+                    
+                    <sml:value>Standard Interfaces:
+2 high speed 64 byte FIFO serial ports (individually to RS232/422/485) up to 230kbps
+1 low power low speed serial port (with optional hardware handshake) up to 9600bps</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Housing material</sml:label>
+                    
+                    <sml:value>Optional Interfaces:
+CAN 2.0B (max. 1 Mbps2515 CAN controller)
+USB 2.0 -configurable as USB slave or USB controller
+(Mass storage support  with configurable power from/to bus)</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Weight</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Size</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Data storage capacity</sml:label>
+                    
+                    <sml:value>SDHC card slot, currently supporting up to 32GB capacity cards with FAT32 file system
+128Byte non volatile FRAM buffer memory</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Time base stability</sml:label>
+                    
+                    <sml:value>Standard 25ppm crystal oscillator time base for low power consumption
+Optional low power algorithmically compensated time base (drift &lt;0,035ppm - 5°C to 35°C after calibration ( from GPS or ext. PPS time base- can be established via Software)</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Power supply</sml:label>
+                    
+                    <sml:value>4 to 33V reserve voltage protected</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Power consumption</sml:label>
+                    
+                    <sml:value>3mW power consumption in standby modus</sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+                
+            <sml:classifier>
+              
+                <sml:Term>
+                    <sml:label>Temperature range</sml:label>
+                    
+                    <sml:value></sml:value>
+                </sml:Term>
+              
+            </sml:classifier>
+              
+          
+        </sml:ClassifierList>
+    </sml:classification>
+  
+     <sml:documentation>
+        <sml:DocumentList>         
+            <sml:document>
+                <gmd:CI_OnlineResource>
+                    <gmd:linkage>
+                        <gmd:URL>http://isi.ifremer.fr/snanny-portal/webgraphiceditorDemo/images/models/mini_logger__interface_and_data_logging_module.png</gmd:URL>
+                    </gmd:linkage>
+                    <gmd:name>
+                        <gco:CharacterString>mini_logger__interface_and_data_logging_module.png</gco:CharacterString>
+                    </gmd:name>                   
+                    <gmd:function><gmd:CI_OnLineFunctionCode codeList="http://www.ifremer.fr/tematres/vocab/index.php?tema=99" codeListValue="quicklook"></gmd:CI_OnLineFunctionCode></gmd:function>
+                </gmd:CI_OnlineResource>
+            </sml:document>
+        </sml:DocumentList>
+    </sml:documentation>
+   
+     
+     
+     
+   
+    
+</sml:PhysicalSystem>
