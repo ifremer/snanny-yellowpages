@@ -76,7 +76,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class JSONHandleBars {
+public class JSONToSensorML {
 	static String pathModels="C:/wamp/www/webgraphiceditorDemo/models";
 	static String pathSensorML="C:/wamp/www/MysqlToJS/sensorML/";
 	public static Map<String, Object> toMap(JSONObject object) throws JSONException
@@ -146,7 +146,7 @@ public class JSONHandleBars {
 	        	OutputStream outputStream = new FileOutputStream(pathSensorML+FilenameUtils.removeExtension(file.getName()) +".xml");
 	        	Writer       writer       = new OutputStreamWriter(outputStream);
 	        	String content = readFile(file.getPath(), StandardCharsets.UTF_8);
-	        	 Map<String, Object> modelMap = JSONHandleBars.toMap(new JSONObject(content));
+	        	 Map<String, Object> modelMap = JSONToSensorML.toMap(new JSONObject(content));
 	        	  Context context = Context
 	        			  .newBuilder(content)
 	        			  .resolver(MapValueResolver.INSTANCE)

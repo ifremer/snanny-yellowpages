@@ -18,14 +18,14 @@ import com.google.gson.JsonObject;
 
 
 
-public class MysqlToJS {
+public class MysqlToJSON {
    // JDBC driver name and database URL
    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
    static final String DB_URL = "jdbc:mysql://visi-common-db/esonet";
    //String[] classifierExamples= { "manufacturer;ijj;","ok;gg,"gg"};
    //  Database credentials
-   static final String USER = "esonet_dba";
-   static final String PASS = "esonet_dba";
+   static final String USER = "";
+   static final String PASS = "";
    static final String Path= "C:/wamp/www/webgraphiceditorDemo/models/";
    static final String imageHost="http://isi.ifremer.fr/snanny-portal/webgraphiceditorDemo/images/models/";
    public static void main(String[] args) {
