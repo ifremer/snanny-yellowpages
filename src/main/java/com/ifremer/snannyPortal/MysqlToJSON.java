@@ -14,7 +14,6 @@ import com.google.gson.JsonObject;
 
 
 public class MysqlToJSON {
-	Properties prop= new Properties();
 	
 	
    // JDBC driver name and database URL
