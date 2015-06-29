@@ -21,30 +21,30 @@ Documentation :
 - Lancer l'application JAVA /EmsoToSensorNannyDraw/MysqlToJSON.java pour générer les
 fichiers JSON
 
-        - DB_URL: l'URL pour accéder à la base de donnée esonet
+    - DB_URL: l'URL pour accéder à la base de donnée esonet
         
-        - USER: le nom d'utilisateur pour s'authentifier au serveur Mysql
+    - USER: le nom d'utilisateur pour s'authentifier au serveur Mysql
         
-        - PASS: Le mot de passe
+    - PASS: Le mot de passe
         
-        - Path: Le chemin du dossier de destination des fichiers JSON
+    - Path: Le chemin du dossier de destination des fichiers JSON
 
 - Lancer l'application /EmsoToSensorNannyDraw/JSTypeGeneration.JAVA pour générer les
 Types en .js
 
-        - Génère les Types .js et les placent dans un dossier spécifié dans la variable path
+    - Génère les Types .js et les placent dans un dossier spécifié dans la variable path
 (webgraphiceditorDemo/javascript/types)
 
-        - Génère StencilGroups.txt contient tout les groupes emso yellow pages à placer dans
+    - Génère StencilGroups.txt contient tout les groupes emso yellow pages à placer dans
 /webgraphiceditorDemo/javascript/stencil.js dans la variable Stencil.groups = {}
 
-        - Génère StencilShapes.txt contient les tableaux de tout les types d'emso yellow pages à
+    - Génère StencilShapes.txt contient les tableaux de tout les types d'emso yellow pages à
 placer dans /webgraphiceditorDemo/javascript/stencil.js dans la variable
 Stencil.shapes={}
 
 - Lancer l'application /EmsoToSensorNannyDraw/JSONToSensorML.JAVA pour générer les
 fichiers SensorML des types.
 
-        - PathModels: chemin source des modèles ( .json )
+    - PathModels: chemin source des modèles ( .json )
 
-        - PathSensorML: chemin destination des types SensorML (.xml)
+    - PathSensorML: chemin destination des types SensorML (.xml)
