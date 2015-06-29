@@ -1,0 +1,4 @@
+com\ifremer\snannyPortal\renameImages.class
+com\ifremer\snannyPortal\MysqlToJSON.class
+com\ifremer\snannyPortal\JSONToSensorML.class
+com\ifremer\snannyPortal\JSTypeGeneration.class
