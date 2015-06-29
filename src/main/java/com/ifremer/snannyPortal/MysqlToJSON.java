@@ -1,34 +1,30 @@
-package com.ifremer.snannyPortal;
 
 import java.io.BufferedWriter;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.InputStream;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.sql.*;
+import java.util.Properties;
 import java.util.UUID;
 
-import org.apache.commons.codec.binary.Base64;
-import org.apache.commons.io.IOUtils;
-
 import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 
 
 
 public class MysqlToJSON {
+	Properties prop= new Properties();
+	
+	
    // JDBC driver name and database URL
    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-   static final String DB_URL = "jdbc:mysql://localhost/esonet";
-   //String[] classifierExamples= { "manufacturer;ijj;","ok;gg,"gg"};
+   static final String DB_URL = Config.getSetting("db_URL");   
    //  Database credentials
-   static final String USER = "root";
-   static final String PASS = "";
-   static final String Path= "C:/wamp/www/webgraphiceditorDemo/models/";
-   static final String imageHost="http://isi.ifremer.fr/snanny-portal/webgraphiceditorDemo/images/models/";
+   static final String USER = Config.getSetting("db_User");
+   static final String PASS = Config.getSetting("db_Pass");
+   static final String Path= Config.getSetting("modelsDestPath");
+   static final String imageHost= Config.getSetting("imagesHost");
    public static void main(String[] args) {
    Connection conn = null;
    Statement stmt = null;
@@ -49,12 +45,13 @@ public class MysqlToJSON {
 	   index++;
    }
    try{
-      //STEP 2: Register JDBC driver
+       //STEP 2: Register JDBC driver
       Class.forName("com.mysql.jdbc.Driver");
 
       //STEP 3: Open a connection
       System.out.println("Connecting to database...");
       conn = DriverManager.getConnection(DB_URL,USER,PASS);
+      
 
       //STEP 4: Execute a query
       System.out.println("Creating statement...");
@@ -63,7 +60,7 @@ public class MysqlToJSON {
     		  {
       String sql;
       sql = "select "+ModelType[j][0]+".*, "+ModelType[j][1]+".model , manufacturer.name as manufacturer, "+ModelType[j][1]+".description, "+ModelType[j][1]+".createdby, user.name from "+ModelType[j][0]+", "+ModelType[j][1]+", manufacturer, user where "+ModelType[j][0]+"."+ModelType[j][1]+"_id="+ModelType[j][1]+".id and manufacturer.id="+ModelType[j][1]+".manufacturer and "+ModelType[j][1]+".createdby=user.email";
-     System.out.println(sql);
+     
       ResultSet rs = stmt.executeQuery(sql);
 
      
@@ -208,9 +205,7 @@ public class MysqlToJSON {
    }
       
        
-         //Display values
         
-         
          
       }
     		  
@@ -239,7 +234,8 @@ public class MysqlToJSON {
          se.printStackTrace();
       }//end finally try
    }//end try
-   System.out.println("Goodbye!");
+   
+   System.out.println("Goodbye! Destination folder : "+Path);
 }//end main
 }//end FirstExample
 

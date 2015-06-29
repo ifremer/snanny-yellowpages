@@ -1,5 +1,3 @@
-package com.ifremer.snannyPortal;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -8,20 +6,21 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.net.URISyntaxException;
 
 
 public class JSTypeGeneration {
+	 private static String[]ModelType = {"DATA_ADCP","DATA_CO2_ANALYSER","DATA_CONDUCTIVITY","DATA_CTD","DATA_CURRENT_METER","DATA_DEPTH","DATA_DO_SENSOR","DATA_FLOW_METER","DATA_FLUOROMETER","DATA_GEOPHONE","DATA_HYDROPHONE","DATA_MAGNETOMETER","DATA_MULTIPARAMETER","DATA_PAH","DATA_PAR_SENSOR","DATA_PARTICLE_SIZER","DATA_PH_SENSOR","DATA_PRESSURE_SENSOR","DATA_REDOX","DATA_SALINOMETER","DATA_SEDIMENT_TRAP","DATA_TEMPERATURE","DATA_TILTMETER","DATA_TURBIDITY","DATA_WATER_SAMPLER", "DATA_ACOUSTIC_MODEM","DATA_ACOUSTIC_RELEASE","DATA_CAMERA","DATA_CONNECTOR","DATA_LOGGER","DATA_FLOAT","DATA_HOUSING","DATA_LASER","DATA_LIGHT","DATA_MOORING_SYSTEM","DATA_POSITIONING_EQUIPMENT","DATA_UNDERWATER_BATTERY","DATA_UNDERWATER_CABLE","DATA_UNDERWATER_SWITCH" };
 	 
-	public static void main(String[] args) throws IOException {
-		String[]ModelType = {"DATA_ADCP","DATA_CO2_ANALYSER","DATA_CONDUCTIVITY","DATA_CTD","DATA_CURRENT_METER","DATA_DEPTH","DATA_DO_SENSOR","DATA_FLOW_METER","DATA_FLUOROMETER","DATA_GEOPHONE","DATA_HYDROPHONE","DATA_MAGNETOMETER","DATA_MULTIPARAMETER","DATA_PAH","DATA_PAR_SENSOR","DATA_PARTICLE_SIZER","DATA_PH_SENSOR","DATA_PRESSURE_SENSOR","DATA_REDOX","DATA_SALINOMETER","DATA_SEDIMENT_TRAP","DATA_TEMPERATURE","DATA_TILTMETER","DATA_TURBIDITY","DATA_WATER_SAMPLER", "DATA_ACOUSTIC_MODEM","DATA_ACOUSTIC_RELEASE","DATA_CAMERA","DATA_CONNECTOR","DATA_LOGGER","DATA_FLOAT","DATA_HOUSING","DATA_LASER","DATA_LIGHT","DATA_MOORING_SYSTEM","DATA_POSITIONING_EQUIPMENT","DATA_UNDERWATER_BATTERY","DATA_UNDERWATER_CABLE","DATA_UNDERWATER_SWITCH" };
-		 
-		 String Path="C:/wamp/www/webgraphiceditorDemo/javascript/types/";
-		// TODO Auto-generated method stub
-		Path path = Paths.get("TypeModel.js");
+	 private static String Path=Config.getSetting("typesJSDestPath");
+	
+	
+
+	//JS types creation from Template TypeModel.js 
+	private static void jsTypesGeneration() throws IOException, URISyntaxException{
 		
 		Charset charset = StandardCharsets.UTF_8;
-
-		
+		Path path = Paths.get(new JSTypeGeneration().getClass().getResource("TypeModel.js").toURI());
 		for(int i=0;i<ModelType.length;i++){
 			String content = new String(Files.readAllBytes(path), charset);
 			Path newType = Paths.get(Path+ModelType[i].substring(5)+".js");
@@ -29,8 +28,11 @@ public class JSTypeGeneration {
 			Files.write(newType, content.getBytes(charset));
 			
 		}
-		
-		
+	}
+	
+	 //include generation for Index.html of SensorNannyDraw
+	private static void includesGeneration()
+	{
 		try(PrintWriter output = new PrintWriter(new FileWriter("index.txt",true))) 
 		{
 			for(int i=0;i<ModelType.length;i++){
@@ -39,7 +41,9 @@ public class JSTypeGeneration {
 		}
 		catch (Exception e) {}
 		
-			
+	}
+	//generation Stencil groups for Stencil.js of SensorNannyDraw
+	private static void stencilGroupsGeneration(){
 		
 		try(PrintWriter output = new PrintWriter(new FileWriter("stencilGroups.txt",true))) 
 		{
@@ -48,7 +52,10 @@ public class JSTypeGeneration {
 		    output.printf("%s\r\n", ModelType[i].substring(5)+": { index: "+index+", label: 'EMSO_"+ModelType[i].substring(5)+"' },");
 		}
 		} 
-		catch (Exception e) {}
+		catch (Exception e) {}		
+	}
+	//Generation Stencil shapes for Stencil.js of SensorNannyDraw
+	private static void stencilShapesGeneration(){		
 		
 		try(PrintWriter output = new PrintWriter(new FileWriter("stencilShapes.txt",true))) 
 		{
@@ -59,7 +66,19 @@ public class JSTypeGeneration {
 		} 
 		catch (Exception e) {}
 		
-		System.out.println("finished");
 	}
+	 
+	public static void main(String[] args) throws IOException , URISyntaxException{
+		// TODO Auto-generated method stub
+		
+		
+		jsTypesGeneration();
+		includesGeneration();
+		stencilGroupsGeneration();
+		stencilShapesGeneration();
+		
+		System.out.println("Finished Destination folder : "+Path);
+	}
+
 
 }

@@ -1,25 +1,17 @@
-package com.ifremer.snannyPortal;
 
-import com.github.jknack.handlebars.Context;
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.Template;
-import com.github.jknack.handlebars.context.MapValueResolver;
-
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.io.StringReader;
 import java.io.Writer;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -31,8 +23,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class JSONToSensorML {
-	static String pathModels="C:/wamp/www/webgraphiceditorDemo/models";
-	static String pathSensorML="C:/wamp/www/EmsoToSensorNannyDraw/sensorML/";
+	static String pathModels=Config.getSetting("modelsSrcPath");
+	static String pathSensorML=Config.getSetting("sensorMLDestPath");
 	public static Map<String, Object> toMap(JSONObject object) throws JSONException
 	{
 	    Map<String, Object> map = new HashMap();
@@ -85,35 +77,24 @@ public class JSONToSensorML {
 	  Handlebars handlebars = new Handlebars();
 
 	  Template template = handlebars.compile("template.handlebars");
-
-	 
-	
-	  
-	
-	    
-	        File[] files = new File(pathModels).listFiles();
 	        
-	       System.out.println(files.length);
+	  File[] files = new File(pathModels).listFiles();
+	        
+	      
 	        for (File file : files) {
 	        	
 	        
 	        	OutputStream outputStream = new FileOutputStream(pathSensorML+FilenameUtils.removeExtension(file.getName()) +".xml");
 	        	Writer       writer       = new OutputStreamWriter(outputStream);
 	        	String content = readFile(file.getPath(), StandardCharsets.UTF_8);
-	        	 Map<String, Object> modelMap = JSONToSensorML.toMap(new JSONObject(content));
-	        	  Context context = Context
-	        			  .newBuilder(content)
-	        			  .resolver(MapValueResolver.INSTANCE)
-	        			  .build();
-	        	
+	        	Map<String, Object> modelMap = JSONToSensorML.toMap(new JSONObject(content));	
 	        	writer.append(template.apply(modelMap));
 	        	
-	        	
-	           
-	        
 	        	writer.flush();
+	        	writer.close();
 	        	
 	        }
+	        System.out.println("finished ==> Destination Folder : "+pathSensorML);
 	    
 	  }
 }

@@ -1,12 +1,11 @@
-package com.ifremer.snannyPortal;
 
 import java.io.File;
-public class renameImages {
+public class RenameImages {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		  String myDirectoryPath = "C:/wamp/www/webgraphiceditorDemo/images/old";
+		  String myDirectoryPath =Config.getSetting("imagesSrcPath");
 		File dir = new File(myDirectoryPath );
 		  File[] directoryListing = dir.listFiles();
 		  if (directoryListing != null) {
@@ -26,16 +25,11 @@ if (newName.length() > 0 && newName.charAt(newName.length()-1)=='_') {
   
 
 newName=newName+".png";
-child.renameTo(new File("C:/wamp/www/webgraphiceditorDemo/images/modelsEdited/"+newName));
+child.renameTo(new File(Config.getSetting("imagesDestPath")+newName));
 System.out.println(newName);
 		    
 		    }
-		  } else {
-		    // Handle the case where dir is not really a directory.
-		    // Checking dir.isDirectory() above would not be sufficient
-		    // to avoid race conditions with another process that deletes
-		    // directories.
-		  }
+		  } 
 	}
 
 }
