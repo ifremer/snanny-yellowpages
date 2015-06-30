@@ -2,6 +2,24 @@
 
 Extract from EMSO yellow pages database (http://www.esonetyellowpages.com/), the hardware and sensor description in sensorML v2.0
 
+#Installation :
+1- run in command line `mvn clean install` ( JAVA 8 required )
+
+2- move jar EmsoToSensorNannyDraw-1.0-SNAPSHOT-jar-with-dependencies in parent directory
+
+3- Configurate config.properties
+
+4- run in command line `run ClassName` for Windows or ./run ClassName for Linux
+    
+
+ClassName  |functionnality
+------------- | -------------
+MysqlToJSON  | Export Data from Esonet DB to JSON
+JSONToSensorML  | Generate SensorML description from JSON Files previously exported with MysqlToJSON
+JSTypeGeneration  | Generate JavaScript Files required by SensorNannyDraw to use Esonet Models
+RenameImages  | Rename Images aspired from Esonet website to work with SensorNannyDraw
+
+
 Documentation :
 
 # Mettre à jour la palette de SensorNannyDraw
