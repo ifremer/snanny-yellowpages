@@ -1,5 +1,7 @@
-
 import java.io.File;
+import java.nio.file.Files;
+import java.io.IOException;
+
 public class RenameImages {
 
 	public static void main(String[] args) {
@@ -12,23 +14,28 @@ public class RenameImages {
 		    for (File child : directoryListing) {
 
 	
-String name=child.getName();
-String[] namesplitted= name.split("_");
-String newName="";
-for( int i=namesplitted.length-2;i>=0;i--)
-{
-	newName=namesplitted[i]+"_"+newName;
-}
-if (newName.length() > 0 && newName.charAt(newName.length()-1)=='_') {
-	newName = newName.substring(0, newName.length()-1);
-  }
-  
+			String name=child.getName();
+			String[] namesplitted= name.split("_");
+			String newName="";
+			for( int i=namesplitted.length-2;i>=0;i--){
+				newName=namesplitted[i]+"_"+newName;
+			}
+			if (newName.length() > 0 && newName.charAt(newName.length()-1)=='_') {
+				newName = newName.substring(0, newName.length()-1);
+			}
+			  
+			newName=newName+".png";
+			File newFile = new File(Config.getSetting("imagesDestPath")+newName);
+			try{
+				Files.move(child.toPath(), newFile.toPath());
+				System.out.println(newFile.getAbsolutePath());
+			//child.renameTo(newFile);
+			} catch (IOException ioe){
+				System.out.println(ioe.getMessage());
+			}
 
-newName=newName+".png";
-child.renameTo(new File(Config.getSetting("imagesDestPath")+newName));
-System.out.println(newName);
-		    
-		    }
+					    
+					    }
 		  } 
 	}
 
