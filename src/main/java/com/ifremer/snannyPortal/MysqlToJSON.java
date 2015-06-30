@@ -58,11 +58,11 @@ public class MysqlToJSON {
       for ( int j=0 ; j<ModelType.length;j++)
     		  {
       String sql;
-      sql = "select "+ModelType[j][0]+".*, "+ModelType[j][1]+".model , manufacturer.name as manufacturer, "+ModelType[j][1]+".description, "+ModelType[j][1]+".createdby, user.name from "+ModelType[j][0]+", "+ModelType[j][1]+", manufacturer, user where "+ModelType[j][0]+"."+ModelType[j][1]+"_id="+ModelType[j][1]+".id and manufacturer.id="+ModelType[j][1]+".manufacturer and "+ModelType[j][1]+".createdby=user.email";
+      sql = "select "+ModelType[j][0]+".*, "+ModelType[j][1]+".model , manufacturer.name as manufacturer, "+ModelType[j][1]+".description, "+ModelType[j][1]+".createdby, user.name from "+ModelType[j][0]+", "+ModelType[j][1]+" LEFT OUTER JOIN user on "+ModelType[j][1]+".createdby=user.email , manufacturer where "+ModelType[j][0]+"."+ModelType[j][1]+"_id="+ModelType[j][1]+".id and manufacturer.id="+ModelType[j][1]+".manufacturer ";
      
       ResultSet rs = stmt.executeQuery(sql);
 
-     
+     System.out.println(sql);
     
       //STEP 5: Extract data from result set
       while(rs.next()){
@@ -140,6 +140,9 @@ public class MysqlToJSON {
          
          contactDataset.addProperty("role","pointOfContact");  
          contactDataset.addProperty("email",rs.getString("createdby"));
+         if(rs.getString("name")==null)
+         contactDataset.addProperty("name","");	 
+         else
          contactDataset.addProperty("name",rs.getString("name"));
          
          contactDatasets.add(contactDataset);
