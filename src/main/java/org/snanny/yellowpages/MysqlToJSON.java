@@ -1,3 +1,4 @@
+package org.snanny.yellowpages;
 
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
@@ -58,6 +59,7 @@ public class MysqlToJSON {
       for ( int j=0 ; j<ModelType.length;j++)
     		  {
       String sql;
+      
       sql = "select "+ModelType[j][0]+".*, "+ModelType[j][1]+".model , manufacturer.name as manufacturer, "+ModelType[j][1]+".description, "+ModelType[j][1]+".createdby, user.name from "+ModelType[j][0]+", "+ModelType[j][1]+" LEFT OUTER JOIN user on "+ModelType[j][1]+".createdby=user.email , manufacturer where "+ModelType[j][0]+"."+ModelType[j][1]+"_id="+ModelType[j][1]+".id and manufacturer.id="+ModelType[j][1]+".manufacturer ";
      
       ResultSet rs = stmt.executeQuery(sql);
@@ -89,8 +91,11 @@ public class MysqlToJSON {
     	  JsonObject sensorModel = new JsonObject();
          
        // Retreive Metadata
-         ResultSetMetaData m=rs.getMetaData();               
-        // Instanciate New json array for Classifier Contact 
+         ResultSetMetaData m=rs.getMetaData();
+         // Instanciate New json array for Identifier Contact
+         JsonArray identifierDatasets = new JsonArray();
+        // Instanciate New json array for Classifier Contact
+        
          JsonArray classifierDatasets = new JsonArray();
          JsonArray contactDatasets = new JsonArray();
          // Instanciate New json Object for Custom, Attributes and images
@@ -146,13 +151,26 @@ public class MysqlToJSON {
          contactDataset.addProperty("name",rs.getString("name"));
          
          contactDatasets.add(contactDataset);
-               //Add manufacturer
+         
+         // Add system code
+         //// TO BE DONE ////
+         JsonObject code = new JsonObject();          
+         code.addProperty("name", "code");  
+         String codeStr = ModelType[j][1]+""+ModelType[j][0]+"_"+rs.getString(ModelType[j][1]+"_id");
+         code.addProperty("URI", codeStr); 
+         code.addProperty("Ref", "modelData");
+         
+         identifierDatasets.add(code);
+         
+         //Add manufacturer
          JsonObject model = new JsonObject();          
          model.addProperty("name", "model");
          model.addProperty("URI", rs.getString("model")); 
          model.addProperty("Ref", "modelData");
          
          classifierDatasets.add(model);
+         
+         
         JsonObject manufacturer = new JsonObject();          
         manufacturer.addProperty("name", "manufacturer");
         manufacturer.addProperty("URI", rs.getString("manufacturer")); 
@@ -193,8 +211,8 @@ public class MysqlToJSON {
     	 //UUID
          sensorModel.addProperty("uuidModel",UUID.nameUUIDFromBytes(rs.getString("model").getBytes()).toString());
          
-         // Add Classifier and contact in JSON Object SensorModel       
-        
+         // Add identifier, classifier and contact in JSON Object SensorModel                
+        custom.add("identifier",identifierDatasets);
         custom.add("classifier",classifierDatasets);
         custom.add("contactMetaData",contactDatasets);        
         sensorModel.add("custom", custom);

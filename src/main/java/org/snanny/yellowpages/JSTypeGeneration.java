@@ -1,3 +1,4 @@
+package org.snanny.yellowpages;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;

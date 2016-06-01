@@ -1,3 +1,4 @@
+package org.snanny.yellowpages;
 import java.io.File;
 import java.nio.file.Files;
 import java.io.IOException;

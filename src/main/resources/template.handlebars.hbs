@@ -62,6 +62,19 @@
                     <sml:value>{{uuidModel}}</sml:value>
                 </sml:Term>
             </sml:identifier>
+            
+               {{#custom}} {{#identifier}}   
+            <sml:identifier>
+              
+                <sml:Term{{#if definition}} definition="{{definition}}"{{/if}}>
+                    <sml:label>{{name}}</sml:label>
+                    {{#if codespace}}<sml:codeSpace xlink:href="{{codespace}}"/>{{/if}}
+                    <sml:value>{{URI}}</sml:value>
+                </sml:Term>
+              
+            </sml:identifier>
+             {{/identifier}} {{/custom}}
+            
         </sml:IdentifierList>
     </sml:identification>
     
