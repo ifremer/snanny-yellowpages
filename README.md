@@ -34,4 +34,6 @@ JSTypeGeneration  | Generate JavaScript Files required by SensorNannyDraw to use
 RenameImages  | Rename Images aspired from Esonet website to work with SensorNannyDraw
 
 
+Note that one need to aspire sensor's or hardware's images separtelly and priori to run the command. It can be quickly done with wget:
 
+wget -r --no-parent https://www.esonetyellowpages.com/img/sensors/
