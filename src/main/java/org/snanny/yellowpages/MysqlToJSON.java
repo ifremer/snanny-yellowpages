@@ -157,7 +157,8 @@ public class MysqlToJSON {
          JsonObject code = new JsonObject();          
          code.addProperty("name", "code");  
          String codeStr = ModelType[j][1]+""+ModelType[j][0]+"_"+rs.getString(ModelType[j][1]+"_id");
-         code.addProperty("URI", codeStr); 
+         code.addProperty("value", codeStr);
+         code.addProperty("URI", "");
          code.addProperty("Ref", "modelData");
          
          identifierDatasets.add(code);
@@ -165,7 +166,8 @@ public class MysqlToJSON {
          //Add manufacturer
          JsonObject model = new JsonObject();          
          model.addProperty("name", "model");
-         model.addProperty("URI", rs.getString("model")); 
+         model.addProperty("value", rs.getString("model"));
+         model.addProperty("URI", "");
          model.addProperty("Ref", "modelData");
          
          classifierDatasets.add(model);
@@ -173,7 +175,8 @@ public class MysqlToJSON {
          
         JsonObject manufacturer = new JsonObject();          
         manufacturer.addProperty("name", "manufacturer");
-        manufacturer.addProperty("URI", rs.getString("manufacturer")); 
+        manufacturer.addProperty("value", rs.getString("manufacturer"));
+        manufacturer.addProperty("URI", "");
         manufacturer.addProperty("Ref", "modelData");
         manufacturer.addProperty("definition", "http://www.ifremer.fr/tematres/vocab/index.php?tema=52");
         manufacturer.addProperty("codespace", "http://www.ifremer.fr/tematres/vocab/xml.php?skosTema=40");
@@ -187,7 +190,8 @@ public class MysqlToJSON {
             
              classifierDataset.addProperty("name", m.getColumnName(i));
             
-             classifierDataset.addProperty("URI", rs.getString(i));
+             classifierDataset.addProperty("value", rs.getString(i));
+             classifierDataset.addProperty("URI", "");
              classifierDataset.addProperty("Ref", "modelData");
              
      if(m.getColumnName(i).toLowerCase().equals("release load"))
